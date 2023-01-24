@@ -23,7 +23,6 @@
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
-macos/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -32,6 +31,11 @@ macos/
 .pub/
 /build/
 .fvm/
+
+# Flutter macos
+macos/
+!macos/Podfile
+!macos/firebase_app_id_file.json
 
 # Symbolication related
 app.*.symbols
