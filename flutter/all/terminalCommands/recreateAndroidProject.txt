@@ -1,0 +1,37 @@
+  check gradle-wrapper.properties & version & java version
+
+  set the automatic signing in build.gradle
+  https://docs.flutter.dev/deployment/android#signing-the-app
+  key.properties for the key and password for Google Play Store
+  
+  possibly need to upgrade
+
+  run the flutter icons package
+    flutter pub run flutter_launcher_icons
+
+
+  app\src\main\AndroidManifest.xml
+    <manifest
+      <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+      <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA"/>
+      <uses-permission android:name="android.permission.CAMERA" />
+      <uses-permission android:name="android.permission.WAKE_LOCK"/>
+      <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+      <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+      <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+        <application
+          <service
+                  android:name="com.atreeon.flutter_foreground_task.service.ForegroundService"
+                  android:foregroundServiceType="camera"
+                  android:stopWithTask="false" />
+
+  app\build.gradle
+    android {
+      compileSdkVersion 33
+      defaultConfig {
+        minSdkVersion 33
+        targetSdkVersion 33
+
+  poss need app/build.gradle upgrade of java
+      compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11

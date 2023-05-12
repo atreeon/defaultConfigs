@@ -1,1 +1,1 @@
-flutter create --org com.atreeon.atreeonDailyQuotes --platforms=macos .
+flutter create --org com.atreeon --platforms=macos .

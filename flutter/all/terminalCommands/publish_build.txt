@@ -3,3 +3,6 @@ flutter pub publish
 
 flutter build web
 flutter build web --base-href /flutter_packages/
+
+flutter build appbundle (for playstore)
+flutter build apk (to install on local device)
