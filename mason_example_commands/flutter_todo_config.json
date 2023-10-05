@@ -1,0 +1,13 @@
+{
+  "projectName": "flutter_todo",
+  "projectDescription": "x",
+  "useBloc": true,
+  "isAPlayProject": true,
+  "isAMainProject": false,
+  "isPublishable": false,
+  "isAndroid": false,
+  "isWeb": false,
+  "isReusableWidget": false,
+  "year": 2023,
+  "platforms": ["macos"]
+}

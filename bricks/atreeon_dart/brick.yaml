@@ -1,0 +1,43 @@
+name: atreeon_dart
+description: Brick to create files for a new flutter app
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.51 <0.1.0"
+
+# Variables specify dynamic values that your brick depends on.
+# Zero or more variables can be specified for a given brick.
+# Each variable has:
+#  * a type (string, number, boolean, enum, array, or list)
+#  * an optional short description
+#  * an optional default value
+#  * an optional list of default values (array only)
+#  * an optional prompt phrase used when asking for the variable
+#  * a list of values (enums only)
+#  * an optional separator (list only)
+vars:
+  projectName:
+    type: string
+    default: PROJECTNAME
+    prompt: Enter the project name?
+  projectDescription:
+    type: string
+    default: PROJECTDESCRIPTION
+    prompt: Enter the project description?
+  isAPlayProject:
+    type: boolean
+    default: true
+    prompt: isAPlayProject?
+  isAMainProject:
+    type: boolean
+    default: true
+    prompt: isAMainProject?
+  isPublishable:
+    type: boolean
+    default: true
+    prompt: isPublishable?
+  year:
+    type: number
+    default: 2023
+    prompt: year?

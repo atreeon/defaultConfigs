@@ -1,0 +1,8 @@
+dart compile exe bin/atreeon_find_replace.dart
+dart compile exe bin/atreeon_find_replace.dart -o build/atreeon_find_replace
+
+dart pub get;
+dart test -r github;
+
+dart pub publish --dry-run
+dart pub publish

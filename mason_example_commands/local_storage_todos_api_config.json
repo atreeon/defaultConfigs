@@ -1,0 +1,13 @@
+{
+  "projectName": "local_storage_todos_api",
+  "projectDescription": "x",
+  "useBloc": false,
+  "isAPlayProject": true,
+  "isAMainProject": false,
+  "isPublishable": false,
+  "isAndroid": false,
+  "isWeb": false,
+  "isReusableWidget": false,
+  "year": 2023,
+  "platforms": ["macos"]
+}

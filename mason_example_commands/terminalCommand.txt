@@ -1,0 +1,45 @@
+mason add atreeon_dart --path ~/Documents/Mega/dev/main/general/defaultConfigs/bricks/atreeon_dart
+
+flutter create flutter_todo &&
+rm -r flutter_todo/android &&
+rm -r flutter_todo/web &&
+rm -r flutter_todo/windows &&
+rm -r flutter_todo/linux &&
+rm -r flutter_todo/test &&
+rm flutter_todo/README.md &&
+rm flutter_todo/.gitignore &&
+mason get &&
+mason make atreeon_flutter_app --on-conflict overwrite -c _mason/config.json -o ./flutter_todo
+
+rm -r local_storage_todos_api &&
+flutter create local_storage_todos_api &&
+rm -r local_storage_todos_api/android &&
+rm -r local_storage_todos_api/web &&
+rm -r local_storage_todos_api/windows &&
+rm -r local_storage_todos_api/linux &&
+rm -r local_storage_todos_api/macos &&
+rm -r local_storage_todos_api/test &&
+rm local_storage_todos_api/README.md &&
+rm local_storage_todos_api/.gitignore &&
+mason get &&
+mason make atreeon_flutter_app --on-conflict overwrite -c _mason/local_storage_todos_api_config.json -o ./local_storage_todos_api
+
+rm -r todos_api &&
+dart create todos_api &&
+cd todos_api &&
+rm .gitignore &&
+rm README.md &&
+rm CHANGELOG.md &&
+mason get &&
+mason make atreeon_dart --on-conflict overwrite -c ../_mason/todos_api_config.json &&
+cd ..
+
+rm -r todos_repository &&
+dart create todos_repository &&
+cd todos_repository &&
+rm .gitignore &&
+rm README.md &&
+rm CHANGELOG.md &&
+mason get &&
+mason make atreeon_dart --on-conflict overwrite -c ../_mason/todos_repository_config.json &&
+cd ..
