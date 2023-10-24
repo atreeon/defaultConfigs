@@ -37,6 +37,14 @@ vars:
     type: boolean
     default: true
     prompt: isPublishable?
+  isAnExe:
+    type: boolean
+    default: true
+    prompt: isAnExe?
+  hasTests:
+    type: boolean
+    default: true
+    prompt: hasTests?
   year:
     type: number
     default: 2023

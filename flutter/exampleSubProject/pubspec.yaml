@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   atreeon_menu_flutter: ^0.1.0
-  dartx: ^0.6.0
+  dartx: ^1.2.0
   font_awesome_flutter: ^9.0.0
   intl: ^0.17.0
   atreeon_get_child_size: ^0.1.1

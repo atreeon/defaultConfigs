@@ -1,8 +1,15 @@
+{{#isAnExe}}
 dart compile exe bin/atreeon_find_replace.dart
 dart compile exe bin/atreeon_find_replace.dart -o build/atreeon_find_replace
+{{/isAnExe}}
 
+{{#hasTests}}
 dart pub get;
 dart test -r github;
+{{/hasTests}}
 
+{{#isPublishable}}
 dart pub publish --dry-run
 dart pub publish
+{{/isPublishable}}
+

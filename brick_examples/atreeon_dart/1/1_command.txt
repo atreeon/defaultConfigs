@@ -1,0 +1,7 @@
+rm -r -f indented_list_logic &&
+dart create indented_list_logic &&
+cd indented_list_logic &&
+rm -r bin &&
+mason get &&
+mason make atreeon_dart --on-conflict overwrite -c ../_mason/indented_list_logic_config.json &&
+cd ..
